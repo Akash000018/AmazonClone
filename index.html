@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Amazon Clone</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="#"><img src="images/amazonlogo.png" alt=""></a>
+        </div>
+        <div class="location">
+            <h4>Delivering To Ahmedabad 380024</h4>
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Update location</h3>
+        </div>
+        <div class="search-box">
+            <select class="option">
+                <option>All</option>
+            </select>
+            <input placeholder="Search Amazon.in">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="language">
+            <select style="border-radius: 2px; background-color:  #0F1111; color: #fff;">
+                <option>EN</option>
+            </select>
+        </div>
+        <div class="account-details">
+            <h4>Hello,Sign Sir<br>Account & List</h4>
+            <select id="option2">
+                <option></option>
+            </select>
+        </div>
+        <div id="text">
+            <h3>Return<h2>&Orders</h2>
+            </h3>
+        </div>
+        <div class="shoping-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h1 id="text2">Cart</h1>
+        </div>
+    </div>
+    <div class="container2">
+        <i class="fa-solid fa-bars"></i>
+        <h4 id="all">All</h4>
+        <ul class="header">
+            <li>Fresh</li>
+            <li>Amazon MiniTv</li>
+            <li>Sell</li>
+            <li>Best Sellers</li>
+            <li>Today's Deals</li>
+            <li>Mobils</li>
+            <li>Electronic</li>
+            <li>Customer Service</li>
+            <li>Prime</li>
+            <li>New Realease</li>
+            <li>Gift Idea</li>
+        </ul>
+        <h4 id="shop-now">New Launach From Mobiles,Electronic & More | Shop Now</h4>
+    </div>
+    <div class="container3">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="images/slider1.jpg"></div>
+                <div class="swiper-slide"><img src="images/slider2.jpg"></div>
+                <div class="swiper-slide"><img src="images/slider3.jpg"></div>
+                <div class="swiper-slide"><img src="images/slider4.jpg"></div>
+                <div class="swiper-slide"><img src="images/slider5.jpg"></div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            // Optional parameters
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <script src="app.js"></script>
+
+    <div class="container4">
+        <div class="box1">
+            <h3>Revamp Your Home in Style</h3>
+            <img src="images/bedsheets.jpg" id="images1">
+            <h6 id="imgtxt1">Cushion Covers bedsheets,<br> &more</h6>
+            <img src="images/figuriness value.jpg" id="images2">
+            <h6 id="imgtxt2">Figurines,Vases and more</h6>
+            <img src="images/home storege.jpg" id="images3">
+            <h6 id="imgtxt3">Home Storege</h6>
+            <img src="images/lighting solution.jpg" id="images4">
+            <h6 id="imgtxt4">Lighting Solution</h6>
+            <a href="#">Explore All</a>
+        </div>
+        <div class="box1">
+            <h3>Up to 60% | Style for Men</h3>
+            <img src="images/mens.jpg" id="images1" style="margin-bottom: 25px;">
+            <h6 id="imgtxt1" style="position: relative; bottom: 15px;">Cushion</h6>
+            <img src="images/watch.jpg" id="images3">
+            <h6 id="imgtxt3" style="position: relative; left: 210px;">Wathes</h6>
+            <img src="images/shoes.jpg" id="images3">
+            <h6 id="imgtxt3">Bags & wallet</h6>
+            <img src="images/bag.jpg" id="images4">
+            <h6 id="imgtxt4">Footware</h6>
+            <a href="#">End Of Season Sale</a>
+        </div>
+        <div class="box1">
+            <h3>Up to 60%|Headphone</h3>
+            <img src="images/boat.jpg" id="images1">
+            <h6 id="imgtxt1">Bots<br>&more</h6>
+            <img src="images/boult.jpg" id="images2">
+            <h6 id="imgtxt2">Figurines,Vases and more</h6>
+            <img src="images/noise.jpg" id="images3">
+            <h6 id="imgtxt3">zebronics</h6>
+            <img src="images/zebronics.jpg" id="images4">
+            <h6 id="imgtxt4">Noise</h6>
+            <a href="#">See all offers</a>
+        </div>
+        <div class="box1">
+            <h3>Revamp Your Home in Style</h3>
+            <img src="images/bedsheets.jpg" id="images1">
+            <h6 id="imgtxt1">Cushion Covers bedsheets,<br> &more</h6>
+            <img src="images/figuriness value.jpg" id="images2">
+            <h6 id="imgtxt2">Figurines,Vases and more</h6>
+            <img src="images/home storege.jpg" id="images3">
+            <h6 id="imgtxt3">Home Storege</h6>
+            <img src="images/lighting solution.jpg" id="images4">
+            <h6 id="imgtxt4">Lighting Solution</h6>
+            <a href="#">Explore All</a>
+        </div>
+    </div>
+    <div class="container4">
+        <div class="box1">
+            <h3>Revamp Your Home in Style</h3>
+            <img src="images/ships.jpg" id="images1">
+            <h6 id="imgtxt1">Cushion Covers bedsheets,<br> &more</h6>
+            <img src="images/bathrrom.jpg" id="images2">
+            <h6 id="imgtxt2">Figurines,Vases and more</h6>
+            <img src="images/hammers.jpg" id="images3">
+            <h6 id="imgtxt3">Home Storege</h6>
+            <img src="images/plugs.jpg" id="images4">
+            <h6 id="imgtxt4">Lighting Solution</h6>
+            <a href="#">Explore All</a>
+        </div>
+        <div class="box1">
+            <h3>Up to 60% | Style for Men</h3>
+            <img src="images/tools1.jpg" id="images1">
+            <h6 id="imgtxt1">Cushion Covers bedsheets,<br> &more</h6>
+            <img src="images/tools2.jpg" id="images2">
+            <h6 id="imgtxt2">Figurines,Vases and more</h6>
+            <img src="images/tools3.jpg" id="images3">
+            <h6 id="imgtxt3">Home Storege</h6>
+            <img src="images/tools4.jpg" id="images4">
+            <h6 id="imgtxt4">Lighting Solution</h6>
+            <a href="#">End Of Season Sale</a>
+        </div>
+        <div class="box1">
+            <h3>Up to 60% | Style for Men</h3>
+            <img src="images/tv1.jpg" id="images1">
+            <h6 id="imgtxt1">Cushion Covers bedsheets,<br> &more</h6>
+            <img src="images/tv2.jpg" id="images2">
+            <h6 id="imgtxt2">Figurines,Vases and more</h6>
+            <img src="images/tv3.jpg" id="images3">
+            <h6 id="imgtxt3">Home Storege</h6>
+            <img src="images/tv4.jpg" id="images4">
+            <h6 id="imgtxt4">Lighting Solution</h6>
+            <a href="#">See all offers</a>
+        </div>
+        <div class="box1">
+            <h3>Revamp Your Home in Style</h3>
+            <img src="images/accessories1.jpg" id="images1">
+            <h6 id="imgtxt1">Cushion Covers bedsheets,<br> &more</h6>
+            <img src="images/accessories2.jpg" id="images2">
+            <h6 id="imgtxt2">Figurines,Vases and more</h6>
+            <img src="images/accessories3.jpg" id="images3">
+            <h6 id="imgtxt3">Home Storege</h6>
+            <img src="images/accessories4.jpg" id="images4">
+            <h6 id="imgtxt4">Lighting Solution</h6>
+            <a href="#">Explore All</a>
+        </div>
+    </div>
+    <div class="orders">
+        <h4>Up to 70% off | Exclusive Collections of home decor from stores neraby <a href="">See all offers</a></h4>
+        <img src="images/clock.jpg">
+        <img src="images/ganesh.jpg">
+        <img src="images/temple.jpg">
+        <img src="images/prcock.jpg">
+        <img src="images/thread.jpg">
+        <img src="images/arts.jpg">
+        <img src="images/krisna.jpg">
+    </div>
+    <div class="orders">
+        <h4>Up to 60% off | New Arrivals Exclusive showcased for local shoping destination <a href="">See all offers</a>
+        </h4>
+        <img src="images/offerimg10.jpg">
+        <img src="images/offerimg11.jpg">
+        <img src="images/offerimg2.jpg">
+        <img src="images/offerimg8.jpg">
+        <img src="images/offerimg3.jpg">
+        <img src="images/offerimg4.jpg">
+        <img src="images/offerimg9.jpg">
+        <img src="images/offerimg5.jpg">
+        <img src="images/offerimg6.jpg">
+        <!-- <img src="images/offerimg7.jpg"> -->
+    </div>
+    <div class="boxes">
+        <div class="box1">
+            <h3>Birthday store</h3>
+            <img src="images/gift1.jpg" id="images1">
+            <h6 id="imgtxt1">Cushion Covers bedsheets,<br> &more</h6>
+            <img src="images/gift2.jpg" id="images2">
+            <h6 id="imgtxt2">Figurines,Vases and more</h6>
+            <img src="images/gift3.jpg" id="images3">
+            <h6 id="imgtxt3">Home Storege</h6>
+            <img src="images/gift4.jpg" id="images4">
+            <h6 id="imgtxt4">Lighting Solution</h6>
+            <a href="#">Explore All</a>
+        </div>
+        <div class="box1">
+            <h3>Top picks | Shoes, jewellery</h3>
+            <img src="images/shoes1.jpg" id="images1">
+            <h6 id="imgtxt1">Cushion Covers bedsheets,<br> &more</h6>
+            <img src="images/jew.jpg" id="images2">
+            <h6 id="imgtxt2">Figurines,Vases and more</h6>
+            <img src="images/watch.jpg" id="images3">
+            <h6 id="imgtxt3">Home Storege</h6>
+            <img src="images/bag.jpg" id="images4">
+            <h6 id="imgtxt4">Lighting Solution</h6>
+            <a href="#">Explore All</a>
+        </div>
+        <div class="box1">
+            <h3>Amazon Fresh | Great prices</h3>
+            <img src="images/fruits.jpg" id="images1">
+            <h6 id="imgtxt1">Cushion Covers bedsheets,<br> &more</h6>
+            <img src="images/fruits1.jpg" id="images2">
+            <h6 id="imgtxt2">Figurines,Vases and more</h6>
+            <img src="images/veg1.jpg" id="images3">
+            <h6 id="imgtxt3">Home Storege</h6>
+            <img src="images/veg1.jpg" id="images4">
+            <h6 id="imgtxt4">Lighting Solution</h6>
+            <a href="#">Explore All</a>
+        </div>
+        <div class="box1">
+            <h3>Top styles</h3>
+            <img src="images/style1.jpg" id="images1">
+            <h6 id="imgtxt1">Cushion Covers bedsheets,<br> &more</h6>
+            <img src="images/style2.jpg" id="images2">
+            <h6 id="imgtxt2">Figurines,Vases and more</h6>
+            <img src="images/style3.jpg" id="images3">
+            <h6 id="imgtxt3">Home Storege</h6>
+            <img src="images/style4.jpg" id="images4">
+            <h6 id="imgtxt4">Lighting Solution</h6>
+            <a href="#">Explore All</a>
+        </div>
+    </div>
+    <div class="orders">
+        <h4>Up to 50% off | Shop for Grocery supplies from shops nearby <a href="">See all offers</a></h4>
+        <img src="images/cake.jpg">
+        <img src="images/cake2.jpg">
+        <img src="images/cake3.jpg">
+        <img src="images/cake4.jpg">
+        <img src="images/sweet1.jpg">
+        <img src="images/sweet.jpg">
+    </div>
+
+    <div class="poster">
+        <img src="images/poster.jpeg" alt="">
+    </div>
+
+    <div class="boxes1">
+        <div class="box1">
+            <h3>Under ₹499 | Pocket-friendly</h3>
+            <img src="images/man-women.jpg" id="images1">
+            <h6 id="imgtxt1">Cushion Covers bedsheets,<br> &more</h6>
+            <img src="images/sclbag.jpg" id="images2">
+            <h6 id="imgtxt2">Figurines,Vases and more</h6>
+            <img src="images/sliper.jpg" id="images3">
+            <h6 id="imgtxt3">Home Storege</h6>
+            <img src="images/menwomenf.jpg" id="images4">
+            <h6 id="imgtxt4">Lighting Solution</h6>
+            <a href="#">Explore All</a>
+        </div>
+        <div class="box1">
+            <h3>Under ₹699 | Combo packs</h3>
+            <img src="images/combopacks.jpg" id="images1" style="width: 345px;">
+            <a href="#" style="position:relative; top:15px;">Explore All</a>
+        </div>
+        <div class="box1">
+            <h3>Season 2 streaming now</h3>
+            <img src="images/minitv.jpg" id="images1" style="width: 345px;">
+            <a href="#" style="position:relative; top:15px;">Explore All</a>
+        </div>
+        <div class="box1">
+            <h3>Air-purifying plants</h3>
+            <img src="images/airpuryfying.jpg" id="images1" style="width: 345px;">
+            <a href="#" style="position:relative; top:15px;">Explore All</a>
+        </div>
+    </div>
+    <div class="iteams">
+        <div class="iteam">
+            <h4>Inspired by your browser History</h4>
+            <img src="images/miwatchjpg.jpg" alt="">
+            <div class="price">
+                <a href=""> mi Smart Watch for Kids Men Boys Girls Women ID116 Plus 2023 Latest for Android and iOS
+                    Phones IP68 Waterproof Activity Tracker</a>
+            </div>
+            <div class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i
+                    class="fa-regular fa-star"></i>
+                <h4>$489.00</h4>
+                <p>Get It by <b>Sunday,February</b>Free Dilivery over $499 Fullfield by Amazon</p>
+            </div>
+        </div>
+        <div class="iteam">
+            <img src="images/watch1.jpg" alt="">
+            <div class="price">
+                <a href=""> mi Smart Watch for Kids Men Boys Girls Women ID116 Plus 2023 Latest for Android and iOS
+                    Phones IP68 Waterproof Activity Tracker</a>
+            </div>
+            <div class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i
+                    class="fa-regular fa-star"></i>
+                <h4>$489.00</h4>
+                <p>Get It by <b>Sunday,February</b>Free Dilivery over $499 Fullfield by Amazon</p>
+            </div>
+        </div>
+        <div class="iteam">
+            <img src="images/watch2.jpg" alt="">
+            <div class="price">
+                <a href=""> mi Smart Watch for Kids Men Boys Girls Women ID116 Plus 2023 Latest for Android and iOS
+                    Phones IP68 Waterproof Activity Tracker</a>
+            </div>
+            <div class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i
+                    class="fa-regular fa-star"></i>
+                <h4>$489.00</h4>
+                <p>Get It by <b>Sunday,February</b>Free Dilivery over $499 Fullfield by Amazon</p>
+            </div>
+        </div>
+        <div class="iteam">
+            <img src="images/watch3.jpg" alt="">
+            <div class="price">
+                <a href=""> mi Smart Watch for Kids Men Boys Girls Women ID116 Plus 2023 Latest for Android and iOS
+                    Phones IP68 Waterproof Activity Tracker</a>
+            </div>
+            <div class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i
+                    class="fa-regular fa-star"></i>
+                <h4>$489.00</h4>
+                <p>Get It by <b>Sunday,February</b>Free Dilivery over $499 Fullfield by Amazon</p>
+            </div>
+        </div>
+        <div class="iteam">
+            <img src="images/watch4.jpg" alt="">
+            <div class="price">
+                <a href=""> mi Smart Watch for Kids Men Boys Girls Women ID116 Plus 2023 Latest for Android and iOS
+                    Phones IP68 Waterproof Activity Tracker</a>
+            </div>
+            <div class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i
+                    class="fa-regular fa-star"></i>
+                <h4>$489.00</h4>
+                <p>Get It by <b>Sunday,February</b>Free Dilivery over $499 Fullfield by Amazon</p>
+            </div>
+        </div>
+         <div class="iteam">
+            <img src="images/watch5.jpg" alt="">
+            <div class="price">
+                <a href=""> mi Smart Watch for Kids Men Boys Girls Women ID116 Plus 2023 Latest for Android and iOS
+                    Phones IP68 Waterproof Activity Tracker</a>
+            </div>
+            <div class="star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i
+                    class="fa-regular fa-star"></i>
+                <h4>$489.00</h4>
+                <p>Get It by <b>Sunday,February</b>Free Dilivery over $499 Fullfield by Amazon</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
